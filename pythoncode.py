@@ -69,3 +69,18 @@ print("Length of String :", len(word))
 print("First Letter of String :", word[0])
 print("Last Letter of String :", word[5])
 print("String Sliced :", word[0:3])
+
+
+#Take Input Val from user
+
+x = input("Enter X's value")
+y = input("Enter Y's value")
+
+#Swapping
+temp = x
+x = y
+y = temp
+
+#Displaying results after swapping
+print("Value of x after swapping", x)
+print("Value of y after swapping", y)
