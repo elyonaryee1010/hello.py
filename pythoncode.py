@@ -163,4 +163,44 @@ for i in range(1,n+1):
                 print(f"{num} is a prime number")
          
 
+### New Activity
 
+def intro(name):
+    print("Hi, I am" + name + "I am red. and this")
+
+user_name=input("Enter your name:")
+intro(user_name)
+
+#Activity-2
+def recr_factorial(n):
+    if n==1:
+     return n
+    else:
+      return n*recr_factorial(n-1)
+   num= int(input("Enter a number:"))
+    if num<0:
+        print("Sorry negative numbers can be used")
+        print("Try using positive numbers")
+    elif num==0:
+       print("Factorial of 0 is 1")
+    else:
+        print("The Factorial of", num, "is", recr_factorial(num))
+
+
+#Activity-3
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def mul(a,b)
+    return a*b
+def div(a,b)
+      return a/b
+
+num1 = int(input("Enter first number"))
+num2 = int(input("Enter second number:"))
+print("Addition:", add(num1,num2))
+print("Subtract:", sub(num1,num2))
+print("Multiply:", mul(num1,num2))
+print("Division:", div(num1,num2))
+print("Thank you for using the calculator")
