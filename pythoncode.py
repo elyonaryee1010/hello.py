@@ -204,3 +204,112 @@ print("Subtract:", sub(num1,num2))
 print("Multiply:", mul(num1,num2))
 print("Division:", div(num1,num2))
 print("Thank you for using the calculator")
+
+
+#Activity-1
+import turtle
+turtle.Screen().bgcolor("orange")
+turtle.Screen().setup(300,400)
+polygon = turtle.Turtle()
+num_sides = 6
+side_length = 70
+angle = 360.0/(num_sides)
+for i in range(num_sides):
+    polygon.forward(side_length)
+    polygon.right(angle)
+turtle.done()
+
+#Activity-2
+turtle.Screen().bgcolor("Aqua")
+board = turtle.Turtle()
+board.forward(100)
+
+board.left(120)
+board.forward(100)
+board.left(120)
+board.forward(100)
+
+board.penup()
+board.right(90)
+board.forward(100)
+
+board.right(12)
+board.forward(100)
+board.right(120)
+#board.forward(100)
+
+#turtle.done()
+
+
+##Activity-3
+#my_wn = turtle.Screen()
+#my_wn.bgcolor("lightgreen")
+#my_wn.title("Hello.")
+#my_pen = turtle.Turtle()
+#size=0
+#while True:
+    #for i in range(4):
+        #my_pen.fd(size+1)
+        #my_pen.left(90)
+        #size= size-5
+        #size= size+1
+    
+
+#Python Data class
+lst= ['apple', 'banana', 'cherry']
+print('The original list is:', lst)
+print('Length of the list:', len(lst))
+
+print('The first element of the list:', lst[0])
+print('The last element of the list:', lst[5])
+print('The first element of the list:', lst[-1])
+
+lst.append('kiwi')
+print('The list after appending kiwi is:', lst)
+
+lst.remove('fig')
+print('The list after appending fig is:', lst)
+
+lst.sort()
+print('The list after appending kiwi is:', lst)
+
+lst.reverse()
+print('The list after appending kiwi is:', lst)
+
+lst.clear()
+print('The list after appending kiwi is:', lst)
+print(lst)
+
+# # Activity2
+my_dict={
+    'name': 'John',
+    'age': '16',
+    'city': 'Camden',
+    'email': 'John@exple.com',
+}
+
+
+print('the original dictionary is:', my_dict)
+print('the original dictionary is:', my_dict['name'])
+print('the original dictionary is:', my_dict['age'])
+
+my_dict['state'] = 'New York'
+print('the original dictionary is:', my_dict)
+
+## Activity-3
+def test(lst1):
+    result={}
+    for item in lst1:
+        result[item[0]]=item[1:]
+    return result
+    
+student_list= [('John', 25,'York'), ('Jane', 30, 'Los Angeles'), ('Jack', 28, 'Boston')]
+
+print(test(student_list))
+print("\nOriginal list of list:", student_list)
+print("Convert the said list of lists to a dictionary:", student_list)
+
+
+
+
+
