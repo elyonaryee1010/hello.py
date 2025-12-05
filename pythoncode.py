@@ -188,9 +188,33 @@ woo=Parrot("woo", 15)
 print("blue is a {}".format(blue._class_.species))
 print("woo is a {}".format(woo._class_.species))
 
+#Activity 4
+
+class Parrot:
+    species={"bird"}
+    def _init_(self, name, age):
+        self.name = name
+        self.age = age
 
 
-        
+
+def sing(self)
+    print(f"{self.name} says squawk")
+    print(f"{self.name} is a specie of {self.species}")
+
+def dance(self)
+    print(f"{self.name} dances")
+
+ames=Parrot("ames", 10)
+whu=Parrot("whu", 14)
+
+ames.sing()
+whu.dance()
+
+
+
+
+       
 
 
 
