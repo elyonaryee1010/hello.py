@@ -211,6 +211,20 @@ whu=Parrot("whu", 14)
 ames.sing()
 whu.dance()
 
+#Constructor and Destructor code
+class Employee:
+    def_init_(self):
+     print("Employer has been created")
+    
+    def_del_(self):
+      print("Destructor called. employee deleted")
+obj = Employee()
+del obj
+
+           
+     
+
+
 
 
 
