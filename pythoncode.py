@@ -695,8 +695,7 @@ c.sell()
 #change the price
 c._maxprice = 1000
 c.sell()
-    def make_sound(self):
-        print()
+    
 
      
 
