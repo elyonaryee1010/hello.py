@@ -644,7 +644,60 @@ if __name__ == "__main__":
         a.display()
         
 
-         
+         #Polymorphism
+
+class Cat:
+    def _init_(self, name, age):
+        self.name = name
+        self.age = age
+        
+    def info(self):
+        print(f"I am a cat. My name is {self.name}. I am {self.age} years old.")
+        
+    def make_sound(self):
+        print("Meow")
+        
+        
+class Dog:
+    def _init_(self, name, age):
+        self.name=name
+        self.age=age
+        
+    def info(self):
+        print(f"I am a {self.name}, and I am {self.age} years old")
+        
+    def make_sound(self):
+        print("Bark")
+            
+cat1 = Cat("Katson", 25)
+dog1 = Dog("Dugson", 8)
+
+for animal in (cat1, dog1):
+    animal.make_sound()
+    animal.info()
+    
+    #Activity-2
+    
+class Computer:
+        
+    def _init_(self):
+        self._maxprice = 900
+            
+    def sell(self):
+        print("Selling Price:{}".format(self._maxprice))
+            
+    def setMaxPrice(self, price):
+        self._maxprice = price
+                
+c = Computer()
+c.sell()
+
+#change the price
+c._maxprice = 1000
+c.sell()
+    def make_sound(self):
+        print()
+
      
 
 
