@@ -426,6 +426,29 @@ print('content of 2 file -\n', f2.read())
 f1.close()
 f2.close()
 
+#Operations on a File - Part 1
+fn = open('Codingal.txt', 'r')
+fn1 = open('Codingal.txt', 'w')
+
+cont = fn.readlines()
+type(cont)
+for i in range(1, len(cont)+1):
+    if(i % 2 != 0):
+        fn1.write(cont[i-1])
+    else:
+        pass
+    
+fn1.close()
+
+fn1 = open('Codingal.txt','r')
+
+cont1 = fn1.read()
+
+print(cont1)
+
+fn.close()
+fn1.close()
+
 
 
 
