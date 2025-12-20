@@ -426,7 +426,7 @@ print('content of 2 file -\n', f2.read())
 f1.close()
 f2.close()
 
-#Operations on a File - Part 1
+#Read Operations Part-1
 fn = open('Codingal.txt', 'r')
 fn1 = open('Codingal.txt', 'w')
 
@@ -449,10 +449,48 @@ print(cont1)
 fn.close()
 fn1.close()
 
+#Read Operations Part-2
+for line in file1.readlines():
+    
+    
+    if not (line.startswith('Coding')):
+        
+        print(line)
+        
+#Remove lines
+file = open('Codingal.txt', 'r')
+print("\n Read in parts \n")
+print(file.read(8))
+file.close()
+
+#Odd Lines
+print("Reading first lines............")
+print(file.readlines())
+
+print("Reading multiple lines.....")
+print(file.readline())
+print(file.readline())
+print(file.readline())
+file.close()
+
+file = open('Codingal.txt', 'r')
+print("Looping through the lines........")
+for line in file:
+    print(line)
+file.close()
 
 
 
-         
+
+
+        
+        
+        
+        
+    
+        
+
+
 
 
 
