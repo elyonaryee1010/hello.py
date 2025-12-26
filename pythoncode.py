@@ -508,6 +508,41 @@ with open("evening.txt", "r") as file:
         print(word)
         
 file.close()
+
+
+
+#Activity-3
+outputFile = open('Updatedfile.txt', "w")
+
+inputFile = open('repeated.txt', "r")
+
+lines_seen_so_far = set()
+print("elrjekfjafafh a")
+
+for line in inputFile:
+    
+    if line not in lines_seen_so_far:
+        
+        outputFile.write(line)
+        
+        lines_seen_so_far.add(line)
+        
+inputFile.close()
+outputFile.close()
+
+#activity 4
+
+with open('codingal.txt') as fp:
+    data2 = fp.read()
+    
+    data += "\n"
+    data1 += data2
+    print("Merging 2 files.....")
+    with open ('mergedfile.txt', 'w') as fp:
+        fp.write(data1)
+        
+        
+
         
 
 
