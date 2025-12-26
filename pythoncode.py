@@ -480,6 +480,38 @@ for line in file:
 file.close()
 
 
+#dfd
+#File 1
+open = ('evening.txt', 'r')
+
+file.close()
+
+#write
+open = ('evening.txt', 'w')
+print("Hello World")
+
+file.close()
+
+#Check
+import os
+if os.path.exist("demofile.txt"):
+    print("IT EXISTS")
+else:
+    print("IT DOESN'T EXIST")
+
+
+#split
+with open("evening.txt", "r") as file:
+    data = file.readlines()
+    for line in data:
+        word = line.split()
+        print(word)
+        
+file.close()
+        
+
+
+
 
 
 
