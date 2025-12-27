@@ -543,7 +543,8 @@ with open('codingal.txt') as fp:
 
 
 #tkinter-1
-from tkinter import *
+import tkinter as tk
+
 
 window = TK()
 window.title('Tkinter Sample Window')
@@ -567,6 +568,24 @@ label.pac()
 
 textbox = Text(fg='green', bg='yellow')
 textbox.pack()
+
+#Tkinter-2
+import tkinter as tk
+
+window.tk.Tk()
+
+for i in range(3):
+  for j in range(30):
+    frame = tk.Frame(
+        master=window,
+        relief=tk.RAISED,
+        borderwidth=1
+    )
+    frame.grid(row=i, column=j, padx=5, pady=5)
+    label = tk.Label(master=frame, text=f"Row {i}\nColumn {j}")
+    label.pack()
+
+window.mainloop()
         
         
 
