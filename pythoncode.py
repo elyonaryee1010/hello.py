@@ -540,6 +540,33 @@ with open('codingal.txt') as fp:
     print("Merging 2 files.....")
     with open ('mergedfile.txt', 'w') as fp:
         fp.write(data1)
+
+
+#tkinter-1
+from tkinter import *
+
+window = TK()
+window.title('Tkinter Sample Window')
+window.geometry('300x300')
+
+#Lavel
+greeting = Label(text="Hello User", fg='red', bg='blue')
+#Button
+button = Button(text="Click me", bg='white', fg='black')
+#Entry
+entry = Entry(fg="red", bg="black", width=50)
+
+greeting.pack()
+button.pack()
+entry.pack()
+
+fram = Frame(master=window, relief=RAISED, borderwidth=5)
+frame.pack()
+label = Lavel(master=frame, text='Sample Frame')
+label.pac()
+
+textbox = Text(fg='green', bg='yellow')
+textbox.pack()
         
         
 
