@@ -586,6 +586,118 @@ for i in range(3):
     label.pack()
 
 window.mainloop()
+
+
+#denominational calculator
+
+
+from tkinter import *
+
+from tkinter import messagebox
+
+from PIL import Image, ImageTk
+
+#Setting up a main window
+root= Tk()
+root.title('Denomination counter')
+root.configure(bg='light blue')
+root.geometry('650x400')
+
+upload = Image.open("app_img.jpg")
+image = ImageTk.PhotoImage(upload)
+label = Label(root, image=image, bg='light blue')
+label.place(x=180, y=20)
+
+label1 = Label(root,
+               text="Hey User!!!!",
+               bg='blue')
+label1.place(relx=0.5, y=340, anchor=CENTER)
+
+def msg():
+  MsgBox = messagebox.showinfo(
+      "Alert", "Do you wish to proceed")
+if MsgBox == 'ok':
+  topwin()
+
+button1 = Button(root,
+                 text="lets start",
+                 command=msg,
+                 bg='brown',
+                 fg='white')
+button1.place(x=260, y=360)
+
+def topwin():
+  top = Toplevel()
+  top.title("den cal")
+  top.configure(bg='light grey')
+  top.geometry("600x350+50+50")
+
+  label = Label(top, text="Enter total amount", bg='light grey')
+  entry = Entry(top)
+  lbl = Label(top, text="here are the number of notes for each den", bg='red')
+
+  l1 = Label(top, text="2000", bg='yellow')
+  l2 = Label(top, text="3000", bg='blue')
+  l3 = Label(top, text="4000", bg='red')
+
+  t1 = Entry(top)
+  t2 = Entry(top)
+  t3 = Entry(top)
+
+  def calculator():
+    global amount
+    amount = int(entry.get())
+    note2000 = amount // 2000
+    amount %= 2000
+    note3000 = amount // 3000
+    amount %= 3000
+    note4000 = amount // 4000
+
+    t1.delete(0, END)
+    t2.delete(0, END)
+    t3.delete(0, END)
+
+    t1.insert(END, str(note2000))
+    t2.insert(END, str(note3000))
+    t3.insert(END, str(note4000))
+  except ValueError:
+    messagebox.showerror("Error")
+
+btn = Button(top, text='Calculate', command=calculator, bg='brown', fg='white')
+
+label.place(x=230, y=50  )
+entry.place(x=200, y=80  )
+btn.place(x=240, y=120   )
+lbl.place(x=140, y=170   )
+
+l1.place(x=180, y=200)
+l2.place(x=180, y=230)
+l3.place(x=180, y=260)
+
+t1.place(x=270, y=200)
+t2.place(x=270, y=230)
+t3.place(x=270, y=260)
+
+top.mainloop()
+
+root.mainloop()
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+          
+  
+
         
         
 
